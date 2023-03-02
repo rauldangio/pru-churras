@@ -1,0 +1,25 @@
+.container-coin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* 100vh no pc */
+  width: 100%; /* 100vw no pc */
+  flex-flow: column;
+  .frase-jogar{
+    margin-top: 30px;
+  }
+}
+
+
+img{
+  height: 50%;
+  border-radius: 50%;
+  box-shadow: 0.78px 0.89px 15px 15px darkgreen;
+}
+
+.btn{
+  cursor: pointer;
+  :hover{
+
+  }
+}
