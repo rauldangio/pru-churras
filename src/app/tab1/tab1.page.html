@@ -9,16 +9,16 @@
 <ion-content [fullscreen]="true" color="dark">
 
   <div class="container-coin">
-    <img [src]="image" alt="">
+    <img [@rotatedState]="state" [src]="image" alt="">
     <h1 class="frase-jogar">{{ resultado }}</h1>
   </div>
 
 </ion-content>
 
 <ion-footer>
-  <ion-toolbar color="dark" class="btn">
+  <ion-toolbar (click)="jogarMoeda()" color="dark" class="btn">
     <ion-title class="ion-text-center">
-      Jogar a moeda
+      Flip the Coin!!
     </ion-title>
   </ion-toolbar>
 </ion-footer>
