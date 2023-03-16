@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab2',
@@ -13,10 +14,24 @@ export class Tab2Page {
   time1_wins = 0;
   time2_wins = 0;
 
-  constructor() { }
+  constructor(private toastController: ToastController) { }
+
+  async presentToast(position: 'top' | 'middle' | 'bottom') {
+    const toast = await this.toastController.create({
+      message: 'TRUCO!',
+      duration: 1500,
+      position: position,
+      cssClass: 'toast'
+    });
+
+    await toast.present();
+  }
 
   change_contador(contador: number) {
     this.valendo = contador
+    if(this.valendo > 2){
+      this.presentToast('bottom')
+    }
   }
 
   increase_team1_score() {
@@ -34,6 +49,11 @@ export class Tab2Page {
     } else {
       this.time1_score -= this.valendo
       this.valendo = 1
+    }
+
+    if(this.time1_score <= 0){
+      this.time1_score = 0
+
     }
   }
 
@@ -53,6 +73,10 @@ export class Tab2Page {
       this.time2_score -= this.valendo
       this.valendo = 1
     }
+
+    if(this.time1_score <= 0){
+      this.time1_score = 0
+    }
   }
 
   clean() {
@@ -62,4 +86,6 @@ export class Tab2Page {
     this.time1_wins = 0;
     this.time2_wins = 0;
   }
+
+
 }
