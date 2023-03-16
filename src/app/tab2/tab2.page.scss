@@ -1,0 +1,54 @@
+.btn-valor{
+  display: flex;
+  justify-content: center;
+}
+
+.btn{
+  margin: 0.8rem;
+}
+
+.time{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.times{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.partidas{
+  border: 2px solid black;
+  padding-left: 2rem;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: aliceblue;
+  color: black;
+}
+
+
+.time1, .time2{
+  display: flex;
+
+}
+
+.result1{
+margin-left: 14rem;
+}
+
+.result2{
+  margin-left: 14rem;
+  }
+
+.limpar{
+
+  display: flex;
+
+}
+
+.rodape{
+  margin: 0;
+}
