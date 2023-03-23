@@ -12,26 +12,26 @@
 </div>
 
 <div class="btn-valor">
-  <ion-button size="large" class="btn" (click)="change_contador(1)">1</ion-button>
-  <ion-button size="large" class="btn" (click)="change_contador(3)">3</ion-button>
-  <ion-button size="large" class="btn" (click)="change_contador(6)">6</ion-button>
-  <ion-button size="large" class="btn" (click)="change_contador(9)">9</ion-button>
-  <ion-button size="large" class="btn" (click)="change_contador(12)">12</ion-button>
+  <ion-button size="large" color="danger" class="btn" (click)="change_contador(1)">1</ion-button>
+  <ion-button size="large"  color="danger" class="btn" (click)="change_contador(3)">3</ion-button>
+  <ion-button size="large"  color="danger" class="btn" (click)="change_contador(6)">6</ion-button>
+  <ion-button size="large"  color="danger" class="btn" (click)="change_contador(9)">9</ion-button>
+  <ion-button size="large"  color="danger" class="btn" (click)="change_contador(12)">12</ion-button>
 </div>
 
 <div class="times">
   <div class="time">
     <h1>Time 1</h1>
-    <ion-button size="large" class="btn" (click)="increase_team1_score()">+</ion-button>
+    <ion-button size="large" color="danger" class="btn" (click)="increase_team1_score()">+</ion-button>
     <p>{{time1_score}}</p>
-    <ion-button size="large" class="btn" (click)=" decrease_team1_score()">-</ion-button>
+    <ion-button size="large"   color="danger" class="btn" (click)=" decrease_team1_score()">-</ion-button>
 
   </div>
   <div class="time">
     <h1>Time 2</h1>
-    <ion-button size="large" class="btn" (click)=" increase_team2_score()">+</ion-button>
+    <ion-button size="large"  color="danger" class="btn" (click)=" increase_team2_score()">+</ion-button>
     <p>{{time2_score}}</p>
-    <ion-button size="large" class="btn" (click)=" decrease_team2_score()">-</ion-button>
+    <ion-button size="large"  color="danger" class="btn" (click)=" decrease_team2_score()">-</ion-button>
   </div>
 </div>
 
@@ -47,5 +47,5 @@
 
 </ion-content>
 <ion-footer class="rodape">
-<ion-button class="limpar" size="large" (click)="clean()">Limpar</ion-button>
+<ion-button class="limpar"  color="danger" size="large" (click)="clean()">Limpar</ion-button>
 </ion-footer>
